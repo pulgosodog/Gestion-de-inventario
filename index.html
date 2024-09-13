@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Gestión de Inventario</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Gestión de Inventario</h1>
+            <ul>
+                <li><a class="menu-item first" href="#" onclick="list(this)">Lista</a></li>
+                <img src="images/or.png" alt="">
+                <li><a class="menu-item" href="#" onclick="addNew(this)">Agregar</a></li>
+                <img src="images/or.png" alt="">
+                <li><a class="menu-item" href="#" onclick="contact(this)">Buscar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product List Section -->
+    <section id="product-list-section">
+        <h2>Lista de productos</h2>
+        <div id="product-list">
+            <!-- Products will be listed here -->
+        </div>
+    </section>
+
+    <!-- Add New Product Section -->
+    <section id="add-product-section">
+        <h2>Agregar nuevo producto</h2>
+        <form id="add-product-form">
+            <input type="text" name="nombre" id="product-name" placeholder="Nombre del producto">
+            <input type="number" name="cantidad" id="product-quantity" placeholder="Cantidad del producto">
+            <input type="number" name="alerta" id="product-alert" placeholder="Alerta de cantidad de producto bajo umbral">
+            <input type="text" name="categoria" id="product-category" placeholder="Categoría del producto">
+            <input type="number" step="0.01" name="precio" id="product-price" placeholder="Precio del producto">
+            <input id="form-submit-button" type="submit" value="Agregar">
+        </form>
+    </section>
+
+    <!-- Search Product Section -->
+    <section id="search-product-section">
+        <h2>Buscar producto</h2>
+        <form id="search-product-form">
+            <input type="text" name="nombre" id="search-name" placeholder="Nombre">
+            <input type="text" name="categoria" id="search-category" placeholder="Categoría">
+            <input id="search-submit-button" type="submit" value="Buscar">
+        </form>
+        <div id="search-results">
+            <!-- Search results will be displayed here -->
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div>
+            <h2>Gabriel Yrigoyen</h2>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="spa.js"></script>
+</body>
+
+</html>
