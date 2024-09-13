@@ -61,14 +61,55 @@ div#product-list {
   width: 100%;
   border-radius: 4px;
 }
-
-section#product-list-section .product {
+.remove-btn {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: white;
+  border-color: black;
+  border-width: 2px 6px 6px 2px;
+  border-radius: 10%;
+  margin: 0.5vw 1vw;
+  padding: 0.1vw 1vw;
+}
+.product {
   display: flex;
   justify-content: space-between;
   background-color: white;
 }
 
-section#product-list-section .product:nth-child(odd) {
+div.product {
+  justify-content: center;
+}
+
+/* Add these styles to your existing CSS */
+.update-btn {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: white;
+  border-color: black;
+  border-width: 2px 6px 6px 2px;
+  border-radius: 10%;
+  margin: 0.5vw 1vw;
+  padding: 0.1vw 1vw;
+}
+
+.update-form {
+  display: none;
+  flex-direction: column;
+  gap: 0.2vw;
+}
+
+.update-form input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  border: 5px solid black;
+  border-radius: 8%;
+  margin: 0.5vw 0;
+}
+
+.product:nth-child(odd) {
   background-color: #ddd;
 }
 
